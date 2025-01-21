@@ -1,0 +1,18 @@
+adjective = input("adjective: ")
+animal = input("animal: ")
+verb1 = input("verb: ")
+exclamation = input("exclamation: ")
+verb2 = input("verb: ")
+verb3 = input("verb: ")
+place = input("place: ")
+food = input("food: ")
+emotion = input("emotion: ")
+number = input("number: ")
+color = input("color: ")
+story = f"The other day, I was really in trouble. It all started when I saw {(animal)} {adjective} {animal} {verb1} down the hallway. \"{exclamation}!\" I yelled. But all\n"
+story += f"I could think to do was to {verb2} over and over. Miraculously,\n"
+story += f"that caused it to stop, but not before it tried to {verb3} right in front of my family.\n"
+story += f"In the midst of all the chaos, I ran to {place} to get some {food}, feeling {emotion}. But when I arrived, I found {number} {color} creatures waiting for me!\n"
+story += f"Could this be the start of something even bigger? Who knows!"
+print("\nYour creative story is:\n")
+print(story)
