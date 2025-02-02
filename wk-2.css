@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    width: 100%;
+    background-color: #0b3503;
+    height: 75px;
+    text-align: center;
+}
+.body {
+
+    background-color: #0b3503;
+    width: 100px;
+    height: 250px;
+}
+.footer {
+    width: 100%;
+    background-color: #0b3503;
+    height: 100px;
+    text-align: center;
+}
+.image {
+    background-color: #0b3503;
+}
+.table-of-contents {
+    background-color: #0b3503;
+}
+.title {
+    color: #0b3503;
+    
+}

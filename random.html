@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .recipe {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .recipe img {
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .recipe h2 {
+            color: #ff6f61;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 10px;
+        }
+        .ingredients, .instructions {
+            margin-top: 15px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Home Cooking Recipes</h1>
+    </header>
+    <div class="container">
+        <div class="recipe">
+            <h2>Classic Spaghetti Bolognese</h2>
+            <img src="/api/placeholder/600/300" alt="Spaghetti Bolognese">
+            <div class="ingredients">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>500g ground beef</li>
+                    <li>400g spaghetti</li>
+                    <li>2 onions, chopped</li>
+                    <li>3 garlic cloves</li>
+                    <li>400g tomato sauce</li>
+                    <li>Olive oil, salt, pepper</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Brown beef in a pan</li>
+                    <li>Add onions and garlic</li>
+                    <li>Pour in tomato sauce</li>
+                    <li>Simmer for 30 minutes</li>
+                    <li>Cook pasta, serve sauce over top</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <h2>Chicken Stir Fry</h2>
+            <img src="/api/placeholder/600/300" alt="Chicken Stir Fry">
+            <div class="ingredients">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>300g chicken breast</li>
+                    <li>Mixed vegetables</li>
+                    <li>Soy sauce</li>
+                    <li>Ginger</li>
+                    <li>Garlic</li>
+                    <li>Sesame oil</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Cut chicken into cubes</li>
+                    <li>Stir fry chicken</li>
+                    <li>Add vegetables</li>
+                    <li>Season with sauce</li>
+                    <li>Cook until chicken is done</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <h2>Vegetarian Quinoa Salad</h2>
+            <img src="/api/placeholder/600/300" alt="Quinoa Salad">
+            <div class="ingredients">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>1 cup quinoa</li>
+                    <li>Cherry tomatoes</li>
+                    <li>Cucumber</li>
+                    <li>Feta cheese</li>
+                    <li>Olive oil</li>
+                    <li>Lemon juice</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Cook quinoa</li>
+                    <li>Chop vegetables</li>
+                    <li>Mix all ingredients</li>
+                    <li>Add dressing</li>
+                    <li>Chill before serving</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <h2>Chocolate Chip Cookies</h2>
+            <img src="/api/placeholder/600/300" alt="Chocolate Chip Cookies">
+            <div class="ingredients">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>2 cups flour</li>
+                    <li>1 cup butter</li>
+                    <li>1 cup chocolate chips</li>
+                    <li>2 eggs</li>
+                    <li>Sugar</li>
+                    <li>Vanilla extract</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Mix wet ingredients</li>
+                    <li>Add dry ingredients</li>
+                    <li>Fold in chocolate chips</li>
+                    <li>Form into balls</li>
+                    <li>Bake at 350°F</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <h2>Mushroom Risotto</h2>
+            <img src="/api/placeholder/600/300" alt="Mushroom Risotto">
+            <div class="ingredients">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>Arborio rice</li>
+                    <li>Mixed mushrooms</li>
+                    <li>Vegetable broth</li>
+                    <li>Parmesan cheese</li>
+                    <li>Onions</li>
+                    <li>White wine</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Sauté onions</li>
+                    <li>Add rice</li>
+                    <li>Pour in wine</li>
+                    <li>Add broth gradually</li>
+                    <li>Stir in mushrooms</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
