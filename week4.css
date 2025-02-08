@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Rock+Salt&display=swap');
+
+
+body {
+    background-color: #fcfbfb;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+/* Typography */
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.msg h2 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+}
+
+.msg p {
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
+/* Spacing and Layout */
+#logo_link {
+    padding-top: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fcfbfb;
+    text-align: center;
+    padding: 35px;
+}
+
+.book, .join {
+    background-color: #d9c2a3;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.icon {
+    padding-top: 10px;
+}
+
+.msg {
+    background-color: #6f7364;
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+footer {
+    margin-top: 200px;
+    padding: 25px 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+/* Borders and Box Sizing */
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+
+main section img {
+    box-sizing: border-box;
+}
