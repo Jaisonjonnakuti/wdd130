@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE Rafters | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="https://jaisonjonnakuti.github.io/wdd130/rafting.html">
+            <img src="rafter logo.webp " alt="RAFTERS">
+        </a>
+        <nav>
+            <a href="https://jaisonjonnakuti.github.io/wdd130/rafting.html">Home</a>
+            <a href="https://jaisonjonnakuti.github.io/wdd130/rates.html">Rates & Dates</a>
+            <a href="https://jaisonjonnakuti.github.io/wdd130/site-plan-rafting.html">Site Plan</a>
+            <a href="https://jaisonjonnakuti.github.io/wdd130/contactus.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <div id="feedback"></div>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="user_email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="user_message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>The Rafters &copy; 2025, Jaison Jonnakuti</p>
+        <p><a href="https://jaisonjonnakuti.github.io/wdd130/site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="https://jaisonjonnakuti.github.io/wdd130/contactus.html">Contact Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = this.user_name.value;
+            document.getElementById('feedback').innerHTML = 
+                `Hello ${name}! Thank you for your message. We will get back with you soon!`;
+            document.getElementById('feedback').style.display = "block";
+        });
+    </script>
+</body>
+</html>
