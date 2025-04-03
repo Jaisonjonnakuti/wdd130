@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Accordion Component</title>
+    <style>
+        /* Basic page styling */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Accordion container */
+        .accordion {
+            background-color: #fff;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        /* Style the accordion panel. Note: hidden by default */
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        /* Add a symbol to indicate expand/collapse */
+        .accordion:after {
+            content: '\02795'; /* Unicode character for "plus" sign (+) */
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2796"; /* Unicode character for "minus" sign (-) */
+        }
+    </style>
+</head>
+<body>
+    <h1>My Programming Journey</h1>
+
+    <button class="accordion">Why I Chose Web Development</button>
+    <div class="panel">
+        <p>I've always been fascinated by how websites work and how they can reach people all around the world. Web development combines creativity with technical skills, allowing me to build something that others can interact with immediately. The instant feedback loop of making changes and seeing results is incredibly satisfying.</p>
+    </div>
+
+    <button class="accordion">My Favorite Web Technologies</button>
+    <div class="panel">
+        <p>HTML provides the structure for all web pages and is the foundation of web development. CSS allows me to style elements and create visually appealing layouts. I'm also learning JavaScript to add interactivity and dynamic features to my websites.</p>
+        <p>Other technologies I'm excited to learn include:</p>
+        <ul>
+            <li>React for building interactive UIs</li>
+            <li>Node.js for server-side JavaScript</li>
+            <li>CSS frameworks like Bootstrap and Tailwind</li>
+        </ul>
+    </div>
+
+    <button class="accordion">My Web Development Goals</button>
+    <div class="panel">
+        <p>By the end of this year, I aim to:</p>
+        <ul>
+            <li>Build a complete portfolio website</li>
+            <li>Create a responsive web application</li>
+            <li>Learn a JavaScript framework</li>
+            <li>Contribute to an open-source project</li>
+        </ul>
+        <p>Long-term, I'd like to work as a full-stack developer creating meaningful applications that solve real problems.</p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
